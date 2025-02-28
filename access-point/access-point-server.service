@@ -3,10 +3,12 @@ Description=Raspi Access Point Server Service
 After=network.target
 
 [Service]
-WorkingDirectory=/this/path/will/be/replaced
+WorkingDirectory=/home/coope/raspi-captive-portal/server/
 ExecStart=/usr/bin/npm start
 Restart=on-failure
 RestartSec=10
+TimeoutStartSec=150
+ExecStartPre=/bin/sleep 130
 Environment=PORT=3000
 
 [Install]

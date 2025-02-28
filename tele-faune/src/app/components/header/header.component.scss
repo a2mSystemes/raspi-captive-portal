@@ -1,0 +1,39 @@
+@use '@angular/material' as mat;
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+:host {
+    
+    @include mat.toolbar-overrides((
+      title-text-font: ' "Atkinson Hyperlegible", "Tilt Neon", "Macondo Swash Caps"',
+      container-text-color: rgb(59, 47, 124),
+    ));
+    @include mat.fab-overrides((
+        container-color: rgb(60, 60, 60),
+        extended-label-text-size: 24px,
+        extended-label-text-font: '"Tilt Neon", "Atkinson Hyperlegible"',
+        foreground-color: rgb(233, 67, 120),
+    ));
+
+    header{
+        height:10%;
+    }
+    .toolbar-flex-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    .toolbar-button-container{
+        display: flex;
+        justify-content: right;
+        width: 250px;
+    }
+    .toolbar-button-row .mat-mdc-button-base{
+        margin: 10px, 10px, 10px, 0;
+    }
+    .toolbar-button-row{
+        // display: flex;
+        // justify-content: center;
+        // width: 200px;
+        display: table-cell;
+        max-width: 1000px;
+    }
+  }

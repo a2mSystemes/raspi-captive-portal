@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import "../node_modules/@fontsource/macondo-swash-caps/index.css";
+@import "../node_modules/@fontsource/kalam/index.css";
+@import "../node_modules/@fontsource/atkinson-hyperlegible/index.css";
+@import "../node_modules/@fontsource/tilt-neon/index.css";
+html, body { height: 100%; box-sizing: border-box; }
+body { 
+    margin: 0; 
+    font-family: "Macondo Swash Caps", "Kalam", "Atkinson Hyperlegible", "Tilt Neon"; 
+    color: rgb(97, 97, 97);
+    background-color: rgb(24, 23, 24);
+}
+
+
+
+// // Customize the entire app. Change :root to your selector if you want to scope the styles.
+// :root {
+//   @include mat.toolbar-overrides((
+//     title-text-font: ' "Kalam", "Atkinson Hyperlegible", "Tilt Neon", "Macondo Swash Caps"',
+//   ));
+// }
